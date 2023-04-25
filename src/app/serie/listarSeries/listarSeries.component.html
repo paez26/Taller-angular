@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <table class="table" style="max-width: 33%; margin: 2% 6%;">
+    <thead style="border-top-width: thin">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Channel</th>
+        <th>Seasons</th>
+      </tr>
+    </thead>
+    <tbody style="background-color:#F2F2F2;">
+      <tr *ngFor="let serie of series">
+        <td><b>{{serie.id}}</b></td>
+        <td><a href="" style="text-decoration-line: none;">{{serie.name}}</a></td>
+        <td>{{serie.channel}}</td>
+        <td>{{serie.seasons}}</td>
+      </tr>
+    </tbody>
+    <tr><td colspan="4" style="white-space: nowrap; padding: 2.7%; width: 100%;">Seasons average: {{promedio}}</td></tr>
+  </table>
+</div>
